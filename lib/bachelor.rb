@@ -35,6 +35,7 @@ end
 def get_average_age_for_season(data, season)
   ages = data[season].collect do |contestant|
      contestant["age"].to_i
+   end
     return ages.reduce(:+)
   end
 end
