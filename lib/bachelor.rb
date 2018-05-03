@@ -37,6 +37,7 @@ def get_average_age_for_season(data, season)
      ages = contestants.collect do |contestant|
         contestant["age"].to_i
     end
+    binding.py
     return (ages.reduce(:+)/contestants.size)
   end
 end
